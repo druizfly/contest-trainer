@@ -1,22 +1,14 @@
-// Estado global del juego
-let estadoJuego = {
-    preguntas: [],
-    preguntasOriginales: [], // Guardar copia de las preguntas originales
+// Estado del juego
+const estadoJuego = {
     preguntaActual: 0,
+    totalPreguntas: 100,
+    preguntas: [],
+    preguntasOriginales: [],
     puntuacion: {},
-    preguntasSeleccionadas: [],
-    totalPreguntas: 50
+    preguntasSeleccionadas: []
 };
 
-console.log('Estado del juego inicializado con totalPreguntas:', estadoJuego.totalPreguntas);
-
-// Elementos del DOM
-const pantallas = {
-    inicio: document.getElementById('pantalla-inicio'),
-    pregunta: document.getElementById('pantalla-pregunta'),
-    resultados: document.getElementById('pantalla-resultados')
-};
-
+// Referencias a elementos del DOM
 const elementos = {
     btnIniciar: document.getElementById('btn-iniciar'),
     btnSiguiente: document.getElementById('btn-siguiente'),
@@ -25,8 +17,6 @@ const elementos = {
     categoriaActual: document.getElementById('categoria-actual'),
     contadorPregunta: document.getElementById('contador-pregunta'),
     opcionesBtns: document.querySelectorAll('.opcion-btn'),
-    feedbackContainer: document.getElementById('feedback-container'),
-    feedbackMensaje: document.getElementById('feedback-mensaje'),
     puntuacionTotal: document.getElementById('puntuacion-total'),
     categoriasGrid: document.getElementById('categorias-grid')
 };
@@ -117,121 +107,99 @@ function distribuirPreguntasPorCategoria(preguntas) {
 }
 
 function obtenerPreguntasAleatorias(preguntas, cantidad) {
-    console.log(`Obteniendo ${cantidad} preguntas de ${preguntas.length} disponibles`);
-    
-    if (preguntas.length === 0) {
-        console.log('No hay preguntas en esta categoría');
-        return [];
-    }
-    
     const preguntasMezcladas = mezclarArray([...preguntas]);
-    const preguntasSeleccionadas = preguntasMezcladas.slice(0, Math.min(cantidad, preguntasMezcladas.length));
-    
-    console.log(`Seleccionadas: ${preguntasSeleccionadas.length} preguntas`);
-    return preguntasSeleccionadas;
+    return preguntasMezcladas.slice(0, Math.min(cantidad, preguntas.length));
 }
 
 function mezclarArray(array) {
-    const arrayMezclado = [...array];
-    for (let i = arrayMezclado.length - 1; i > 0; i--) {
+    const nuevoArray = [...array];
+    for (let i = nuevoArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [arrayMezclado[i], arrayMezclado[j]] = [arrayMezclado[j], arrayMezclado[i]];
+        [nuevoArray[i], nuevoArray[j]] = [nuevoArray[j], nuevoArray[i]];
     }
-    return arrayMezclado;
+    return nuevoArray;
 }
 
 function inicializarPuntuacion() {
     const categorias = ['Historia', 'Geografía', 'Ciencia y Naturaleza', 'Arte', 'Cine y Series', 'Deportes', 'Literatura'];
     categorias.forEach(categoria => {
-        estadoJuego.puntuacion[categoria] = { correctas: 0, total: 0 };
+        estadoJuego.puntuacion[categoria] = {
+            correctas: 0,
+            total: 0
+        };
     });
 }
 
 function configurarEventListeners() {
+    console.log('Configurando event listeners...');
+    
+    // Botón iniciar concurso
     elementos.btnIniciar.addEventListener('click', iniciarConcurso);
+    
+    // Botón siguiente pregunta
     elementos.btnSiguiente.addEventListener('click', siguientePregunta);
+    
+    // Botón nuevo concurso
     elementos.btnNuevoConcurso.addEventListener('click', reiniciarJuego);
     
-    // Event listeners para las opciones
+    // Opciones de respuesta
     elementos.opcionesBtns.forEach(btn => {
         btn.addEventListener('click', () => seleccionarRespuesta(btn));
     });
+    
+    console.log('Event listeners configurados');
 }
 
 function iniciarConcurso() {
     console.log('Iniciando concurso...');
-    console.log('Preguntas disponibles:', estadoJuego.preguntas.length);
-    console.log('Preguntas originales:', estadoJuego.preguntasOriginales.length);
     
-    // Resetear el estado del juego
+    // Verificar que tenemos preguntas
+    if (estadoJuego.preguntas.length === 0 && estadoJuego.preguntasOriginales.length > 0) {
+        estadoJuego.preguntas = [...estadoJuego.preguntasOriginales];
+    }
+    
+    if (estadoJuego.preguntas.length === 0) {
+        alert('No hay preguntas disponibles. Por favor, recarga la página.');
+        return;
+    }
+    
+    // Mezclar preguntas al inicio
+    estadoJuego.preguntas = mezclarArray([...estadoJuego.preguntas]);
+    
+    // Resetear estado
     estadoJuego.preguntaActual = 0;
     reiniciarPuntuacion();
     
-    // Asegurar que tenemos las preguntas disponibles
-    if (estadoJuego.preguntas.length === 0) {
-        if (estadoJuego.preguntasOriginales.length > 0) {
-            console.log('Restaurando desde preguntas originales...');
-            estadoJuego.preguntas = [...estadoJuego.preguntasOriginales];
-        } else {
-            console.error('No hay preguntas originales disponibles');
-            alert('Error: No se pueden cargar las preguntas. Por favor, recarga la página.');
-            return;
-        }
-    }
-    
-    // Mezclar las preguntas para orden aleatorio
-    estadoJuego.preguntas = mezclarArray([...estadoJuego.preguntas]);
-    console.log('Preguntas mezcladas:', estadoJuego.preguntas.length);
-    
-    // Ir a la primera pregunta
-    mostrarPantalla('pregunta');
+    // Mostrar primera pregunta
     mostrarPregunta();
-}
-
-function reiniciarPuntuacion() {
-    // Reiniciar puntuación de todas las categorías
-    Object.keys(estadoJuego.puntuacion).forEach(categoria => {
-        estadoJuego.puntuacion[categoria] = { correctas: 0, total: 0 };
-    });
     
-    // Resetear también el array de preguntas seleccionadas si existe
-    if (estadoJuego.preguntasSeleccionadas) {
-        estadoJuego.preguntasSeleccionadas = [];
-    }
+    // Cambiar a pantalla de pregunta
+    mostrarPantalla('pregunta');
 }
 
 function mostrarPantalla(pantalla) {
     // Ocultar todas las pantallas
-    Object.values(pantallas).forEach(p => p.classList.remove('activa'));
+    document.querySelectorAll('.pantalla').forEach(p => p.classList.remove('activa'));
     
-    // Mostrar la pantalla solicitada
-    pantallas[pantalla].classList.add('activa');
+    // Mostrar pantalla solicitada
+    document.getElementById(`pantalla-${pantalla}`).classList.add('activa');
 }
 
 function mostrarPregunta() {
-    console.log('Mostrando pregunta...');
-    console.log('Pregunta actual:', estadoJuego.preguntaActual);
-    console.log('Preguntas disponibles:', estadoJuego.preguntas.length);
-    console.log('Preguntas originales:', estadoJuego.preguntasOriginales.length);
+    console.log('Mostrando pregunta:', estadoJuego.preguntaActual);
     
-    // Validar que hay preguntas disponibles
-    if (!estadoJuego.preguntas || estadoJuego.preguntas.length === 0) {
-        console.error('No hay preguntas disponibles, intentando restaurar...');
-        
-        // Intentar restaurar desde las preguntas originales
+    if (estadoJuego.preguntas.length === 0) {
+        console.error('No hay preguntas disponibles');
         if (estadoJuego.preguntasOriginales.length > 0) {
-            console.log('Restaurando preguntas desde originales...');
             estadoJuego.preguntas = [...estadoJuego.preguntasOriginales];
             estadoJuego.preguntas = mezclarArray([...estadoJuego.preguntas]);
         } else {
-            console.error('No se pueden restaurar las preguntas');
-            alert('Error: No se pueden cargar las preguntas. Por favor, recarga la página.');
+            alert('No se pueden restaurar las preguntas');
             mostrarPantalla('inicio');
             return;
         }
     }
     
-    // Verificar si hemos terminado todas las preguntas
     if (estadoJuego.preguntaActual >= estadoJuego.preguntas.length) {
         mostrarResultados();
         return;
@@ -239,19 +207,15 @@ function mostrarPregunta() {
     
     const pregunta = estadoJuego.preguntas[estadoJuego.preguntaActual];
     
-    // Mostrar contador de pregunta
-    elementos.contadorPregunta.textContent = `Pregunta ${estadoJuego.preguntaActual + 1} de ${estadoJuego.totalPreguntas}`;
-    
-    // Mostrar categoría
-    elementos.categoriaActual.textContent = pregunta.categoria;
-    
-    // Mostrar pregunta
+    // Mostrar pregunta y categoría
     elementos.preguntaTexto.textContent = pregunta.pregunta;
+    elementos.categoriaActual.textContent = pregunta.categoria;
+    elementos.contadorPregunta.textContent = `Pregunta ${estadoJuego.preguntaActual + 1} de ${estadoJuego.totalPreguntas}`;
     
     // Preparar opciones
     const opciones = prepararOpciones(pregunta);
     
-    // Mostrar opciones
+    // Configurar botones de opciones
     elementos.opcionesBtns.forEach((btn, index) => {
         btn.textContent = opciones[index];
         btn.className = 'opcion-btn';
@@ -259,9 +223,10 @@ function mostrarPregunta() {
         btn.dataset.respuesta = opciones[index];
     });
     
-    // Ocultar feedback y botón siguiente
-    elementos.feedbackContainer.style.display = 'none';
+    // Ocultar botón siguiente
+    console.log('Ocultando botón siguiente...');
     elementos.btnSiguiente.style.display = 'none';
+    console.log('Estado del botón después de ocultar:', elementos.btnSiguiente.style.display);
 }
 
 function prepararOpciones(pregunta) {
@@ -294,29 +259,16 @@ function seleccionarRespuesta(btnSeleccionado) {
     // Actualizar puntuación
     actualizarPuntuacion(pregunta.categoria, esCorrecta);
     
-    // Mostrar feedback
-    mostrarFeedback(esCorrecta);
-    
     // Mostrar botón siguiente
+    console.log('Mostrando botón siguiente...');
     elementos.btnSiguiente.style.display = 'block';
+    console.log('Estado del botón:', elementos.btnSiguiente.style.display);
 }
 
 function actualizarPuntuacion(categoria, esCorrecta) {
     estadoJuego.puntuacion[categoria].total++;
     if (esCorrecta) {
         estadoJuego.puntuacion[categoria].correctas++;
-    }
-}
-
-function mostrarFeedback(esCorrecta) {
-    elementos.feedbackContainer.style.display = 'block';
-    
-    if (esCorrecta) {
-        elementos.feedbackMensaje.textContent = '¡Correcto! 🎉';
-        elementos.feedbackMensaje.className = 'feedback-mensaje correcto mostrar';
-    } else {
-        elementos.feedbackMensaje.textContent = 'Incorrecto ❌';
-        elementos.feedbackMensaje.className = 'feedback-mensaje incorrecto mostrar';
     }
 }
 
@@ -390,4 +342,15 @@ function reiniciarJuego() {
     
     // Volver a la pantalla de inicio
     mostrarPantalla('inicio');
+}
+
+function reiniciarPuntuacion() {
+    const categorias = ['Historia', 'Geografía', 'Ciencia y Naturaleza', 'Arte', 'Cine y Series', 'Deportes', 'Literatura'];
+    categorias.forEach(categoria => {
+        estadoJuego.puntuacion[categoria] = {
+            correctas: 0,
+            total: 0
+        };
+    });
+    estadoJuego.preguntasSeleccionadas = [];
 } 

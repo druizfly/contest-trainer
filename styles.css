@@ -230,39 +230,26 @@ body {
     opacity: 0.7;
 }
 
-/* Feedback */
-.feedback-container {
-    text-align: center;
-    margin: 1.5rem 0;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Feedback visual solo con colores - sin mensajes */
+.respuesta.correcta {
+    background: linear-gradient(135deg, #4CAF50, #45a049) !important;
+    color: white !important;
+    border-color: #4CAF50 !important;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
 }
 
-.feedback-mensaje {
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    opacity: 0;
-    transform: translateY(10px);
+.respuesta.incorrecta {
+    background: linear-gradient(135deg, #f44336, #d32f2f) !important;
+    color: white !important;
+    border-color: #f44336 !important;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(244, 67, 54, 0.4);
+}
+
+/* Transición suave para los cambios de color */
+.respuesta {
     transition: all 0.3s ease;
-}
-
-.feedback-mensaje.mostrar {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.feedback-mensaje.correcto {
-    background: linear-gradient(45deg, #4CAF50, #45a049);
-    color: white;
-}
-
-.feedback-mensaje.incorrecto {
-    background: linear-gradient(45deg, #f44336, #d32f2f);
-    color: white;
 }
 
 /* Pantalla de Resultados */
