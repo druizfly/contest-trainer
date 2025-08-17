@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso Trainer - Preparación para Concurso de TV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de Inicio -->
+    <div id="pantalla-inicio" class="pantalla activa">
+        <div class="container">
+            <h1>🎯 Concurso Trainer</h1>
+            <p class="subtitulo">Prepárate para tu concurso de televisión</p>
+            
+            <div class="instrucciones">
+                <h2>Instrucciones:</h2>
+                <ul>
+                    <li>Responde 100 preguntas de conocimiento general</li>
+                    <li>Las preguntas están distribuidas en 7 categorías</li>
+                    <li>Recibirás feedback inmediato después de cada respuesta</li>
+                    <li>Al final verás tu puntuación por categoría</li>
+                </ul>
+            </div>
+            
+            <button id="btn-iniciar" class="btn-principal">🚀 Iniciar Concurso</button>
+        </div>
+    </div>
+
+    <!-- Pantalla de Pregunta -->
+    <div id="pantalla-pregunta" class="pantalla">
+        <div class="container">
+            <div class="header-pregunta">
+                <div class="contador-pregunta" id="contador-pregunta">Pregunta 1 de 100</div>
+                <div class="categoria-badge" id="categoria-actual"></div>
+            </div>
+            
+            <div class="pregunta-container">
+                <h2 id="pregunta-texto"></h2>
+                
+                <div class="opciones-container">
+                    <button class="opcion-btn" data-opcion="0"></button>
+                    <button class="opcion-btn" data-opcion="1"></button>
+                    <button class="opcion-btn" data-opcion="2"></button>
+                    <button class="opcion-btn" data-opcion="3"></button>
+                </div>
+                
+                <div class="feedback-container" id="feedback-container">
+                    <div class="feedback-mensaje" id="feedback-mensaje"></div>
+                </div>
+                
+                <button id="btn-siguiente" class="btn-secundario" style="display: none;">
+                    Siguiente Pregunta →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Resultados -->
+    <div id="pantalla-resultados" class="pantalla">
+        <div class="container">
+            <h1>🏆 Resultados del Concurso</h1>
+            
+            <div class="resumen-total">
+                <h2>Puntuación Total</h2>
+                <div class="puntuacion-total" id="puntuacion-total"></div>
+            </div>
+            
+            <div class="resumen-categorias">
+                <h2>Desglose por Categoría</h2>
+                <div class="categorias-grid" id="categorias-grid"></div>
+            </div>
+            
+            <button id="btn-nuevo-concurso" class="btn-principal">🔄 Nuevo Concurso</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

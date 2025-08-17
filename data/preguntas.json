@@ -1,0 +1,667 @@
+{
+  "categorias": [
+    "Historia",
+    "Geografía", 
+    "Ciencia y Naturaleza",
+    "Arte",
+    "Cine y Series",
+    "Deportes",
+    "Literatura"
+  ],
+  "preguntas": [
+    {
+      "categoria": "Historia",
+      "pregunta": "¿En qué año terminó la Segunda Guerra Mundial?",
+      "respuesta_correcta": "1945",
+      "respuestas_incorrectas": ["1944", "1939", "1950"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
+      "respuesta_correcta": "George Washington",
+      "respuestas_incorrectas": ["Thomas Jefferson", "Abraham Lincoln", "John Adams"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Qué famosa filósofa fue víctima del fanatismo religioso?",
+      "respuesta_correcta": "Hipatia",
+      "respuestas_incorrectas": ["Tomás de Aquino", "Juana de Arco", "María Curie"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿En qué año murió Margaret Thatcher?",
+      "respuesta_correcta": "2013",
+      "respuestas_incorrectas": ["2010", "2000", "2008"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿En qué año se publicó la primera parte del Quijote?",
+      "respuesta_correcta": "1605",
+      "respuestas_incorrectas": ["1615", "1599", "1620"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Cuántos países hay reconocidos actualmente?",
+      "respuesta_correcta": "195",
+      "respuestas_incorrectas": ["193", "200", "185"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Cuántas válvulas tiene el corazón humano?",
+      "respuesta_correcta": "4",
+      "respuestas_incorrectas": ["3", "5", "6"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Quién dijo que la Tierra gira alrededor del sol indignó a la Iglesia?",
+      "respuesta_correcta": "Galileo",
+      "respuestas_incorrectas": ["Newton", "Einstein", "Copérnico"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Cuál fue la capital del Imperio Inca?",
+      "respuesta_correcta": "Cusco",
+      "respuestas_incorrectas": ["Lima", "Bogotá", "Quito"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Qué famoso barco se hundió tras chocar con un iceberg?",
+      "respuesta_correcta": "Titanic",
+      "respuestas_incorrectas": ["Bismarck", "Queen Mary", "Lusitania"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Quién fue el primer hombre en pisar la luna?",
+      "respuesta_correcta": "Neil Armstrong",
+      "respuestas_incorrectas": ["Buzz Aldrin", "Yuri Gagarin", "Michael Collins"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Cuál es el planeta rojo?",
+      "respuesta_correcta": "Marte",
+      "respuestas_incorrectas": ["Venus", "Júpiter", "Saturno"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Quién escribió \"Cien años de soledad\"?",
+      "respuesta_correcta": "Gabriel García Márquez",
+      "respuestas_incorrectas": ["Julio Cortázar", "Mario Vargas Llosa", "Isabel Allende"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Qué civilización construyó las pirámides?",
+      "respuesta_correcta": "Egipcia",
+      "respuestas_incorrectas": ["Griega", "Romana", "Azteca"]
+    },
+    {
+      "categoria": "Historia",
+      "pregunta": "¿Cuál es la capital de Francia?",
+      "respuesta_correcta": "París",
+      "respuestas_incorrectas": ["Berlín", "Londres", "Roma"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Qué río atraviesa Sevilla?",
+      "respuesta_correcta": "Guadalquivir",
+      "respuestas_incorrectas": ["Guadiana", "Ebro", "Tajo"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuál es el monumento histórico más visitado de España?",
+      "respuesta_correcta": "Alhambra",
+      "respuestas_incorrectas": ["Sagrada Familia", "Parthenon", "Torre de Londres"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cómo se llama el estrecho que separa España de África?",
+      "respuesta_correcta": "Gibraltar",
+      "respuestas_incorrectas": ["Estrecho de Magallanes", "Bósforo", "Suez"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Dónde se originó la humanidad?",
+      "respuesta_correcta": "África",
+      "respuestas_incorrectas": ["Asia", "Europa", "América"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuál es la ciudad capital de Canadá?",
+      "respuesta_correcta": "Ottawa",
+      "respuestas_incorrectas": ["Toronto", "Vancouver", "Montreal"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Qué línea imaginaria divide la Tierra en hemisferios?",
+      "respuesta_correcta": "Ecuador",
+      "respuestas_incorrectas": ["Meridiano de Greenwich", "Círculo Polar Ártico", "Círculo Polar Antártico"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuál es el río más largo del mundo (según muchas fuentes)?",
+      "respuesta_correcta": "Nilo",
+      "respuestas_incorrectas": ["Amazonas", "Misisipi", "Yangtze"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuántas comunidades autónomas tiene España?",
+      "respuesta_correcta": "17",
+      "respuestas_incorrectas": ["16", "18", "15"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuál es el océano más grande del mundo?",
+      "respuesta_correcta": "Pacífico",
+      "respuestas_incorrectas": ["Atlántico", "Índico", "Ártico"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Dónde está la Casa Blanca?",
+      "respuesta_correcta": "Washington DC",
+      "respuestas_incorrectas": ["New York", "Los Ángeles", "Chicago"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuál es la capital de Italia?",
+      "respuesta_correcta": "Roma",
+      "respuestas_incorrectas": ["Milán", "Nápoles", "Torino"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuál es el país más grande del área terrestre?",
+      "respuesta_correcta": "Rusia",
+      "respuestas_incorrectas": ["Canadá", "China", "Estados Unidos"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Qué planeta tiene un satélite natural notable?",
+      "respuesta_correcta": "Tierra",
+      "respuestas_incorrectas": ["Venus", "Plutón", "Marte"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuál es la capital de México?",
+      "respuesta_correcta": "Ciudad de México",
+      "respuestas_incorrectas": ["Guadalajara", "Monterrey", "Veracruz"]
+    },
+    {
+      "categoria": "Geografía",
+      "pregunta": "¿Cuál es la capital de Australia?",
+      "respuesta_correcta": "Canberra",
+      "respuestas_incorrectas": ["Sydney", "Melbourne", "Adelaide"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuál es la fórmula del agua?",
+      "respuesta_correcta": "H2O",
+      "respuestas_incorrectas": ["H2", "O2", "HO"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuántas veces ha ganado España Eurovisión?",
+      "respuesta_correcta": "2",
+      "respuestas_incorrectas": ["1", "3", "0"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuál es el órgano que más energía consume del cuerpo?",
+      "respuesta_correcta": "cerebro",
+      "respuestas_incorrectas": ["corazón", "hígado", "pulmón"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Qué disco es el más vendido de la historia?",
+      "respuesta_correcta": "Thriller",
+      "respuestas_incorrectas": ["Back in Black", "The Dark Side of the Moon", "Bad"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuántos colores tiene el arcoíris?",
+      "respuesta_correcta": "7",
+      "respuestas_incorrectas": ["6", "8", "5"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuántas cuerdas tiene un violín?",
+      "respuesta_correcta": "4",
+      "respuestas_incorrectas": ["3", "5", "6"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuál es el futbolista con más Balones de Oro?",
+      "respuesta_correcta": "Messi",
+      "respuestas_incorrectas": ["Ronaldo", "Neymar", "Platini"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuál es la fórmula química del agua?",
+      "respuesta_correcta": "H2O",
+      "respuestas_incorrectas": ["H2O2", "HO", "OH"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuál es el lugar más frío del planeta?",
+      "respuesta_correcta": "Antártida",
+      "respuestas_incorrectas": ["Groenlandia", "Siberia", "Ártico"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Qué sistema mide magnitud de terremotos?",
+      "respuesta_correcta": "Richter",
+      "respuestas_incorrectas": ["Scoville", "Fahrenheit", "Celsius"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuál es el símbolo químico del oro?",
+      "respuesta_correcta": "Au",
+      "respuestas_incorrectas": ["Ag", "Fe", "Al"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Qué planeta es famoso por sus anillos?",
+      "respuesta_correcta": "Saturno",
+      "respuestas_incorrectas": ["Marte", "Júpiter", "Urano"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Cuál es la raíz cuadrada de 81?",
+      "respuesta_correcta": "9",
+      "respuestas_incorrectas": ["8", "7", "6"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Qué elemento químico tiene símbolo Na?",
+      "respuesta_correcta": "Sodio",
+      "respuestas_incorrectas": ["K", "Li", "Ca"]
+    },
+    {
+      "categoria": "Ciencia y Naturaleza",
+      "pregunta": "¿Qué vegetal se usa para hacer tartas de calabaza?",
+      "respuesta_correcta": "Calabaza",
+      "respuestas_incorrectas": ["Manzana", "Chocolate", "Zanahoria"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Quién pintó la Mona Lisa?",
+      "respuesta_correcta": "Leonardo da Vinci",
+      "respuestas_incorrectas": ["Michelangelo", "Raphael", "Donatello"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Quién pintó el Guernica?",
+      "respuesta_correcta": "Pablo Picasso",
+      "respuestas_incorrectas": ["Salvador Dalí", "Diego Velázquez", "Francisco Goya"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Quién escribió la Odisea?",
+      "respuesta_correcta": "Homero",
+      "respuestas_incorrectas": ["Virgilio", "Safo", "Píndaro"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Quién pintó el techo de la Capilla Sixtina?",
+      "respuesta_correcta": "Miguel Ángel",
+      "respuestas_incorrectas": ["Leonardo da Vinci", "Raphael", "Donatello"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Qué alimento es el ingrediente principal del gazpacho?",
+      "respuesta_correcta": "tomate",
+      "respuestas_incorrectas": ["pimiento", "pepino", "ajo"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Qué animal es el rey de la selva?",
+      "respuesta_correcta": "león",
+      "respuestas_incorrectas": ["tigre", "elefante", "lobo"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Quién desarrolló la teoría de la relatividad?",
+      "respuesta_correcta": "Einstein",
+      "respuestas_incorrectas": ["Newton", "Galileo", "Bohr"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Quién fue la primera mujer en ganar un Nobel?",
+      "respuesta_correcta": "Marie Curie",
+      "respuestas_incorrectas": ["Mother Teresa", "Jane Austen", "Florence Nightingale"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Quién pintó el cielo estrellado?",
+      "respuesta_correcta": "Van Gogh",
+      "respuestas_incorrectas": ["Picasso", "Monet", "Da Vinci"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Cuál es el famoso monumento fue construido por Keops?",
+      "respuesta_correcta": "Gran Pirámide de Giza",
+      "respuestas_incorrectas": ["Taj Mahal", "Gran Muralla China", "Stonehenge"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Cuál es la capital de Italia?",
+      "respuesta_correcta": "Roma",
+      "respuestas_incorrectas": ["Milán", "Nápoles", "Torino"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Cuál es el país más grande del área terrestre?",
+      "respuesta_correcta": "Rusia",
+      "respuestas_incorrectas": ["Canadá", "China", "Estados Unidos"]
+    },
+    {
+      "categoria": "Arte",
+      "pregunta": "¿Qué planeta es famoso por sus anillos?",
+      "respuesta_correcta": "Saturno",
+      "respuestas_incorrectas": ["Marte", "Júpiter", "Urano"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Quién interpretó al personaje Forrest Gump?",
+      "respuesta_correcta": "Tom Hanks",
+      "respuestas_incorrectas": ["Leonardo DiCaprio", "Brad Pitt", "Johnny Depp"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Quién es el superhéroe dios del trueno de Marvel?",
+      "respuesta_correcta": "Thor",
+      "respuestas_incorrectas": ["Iron Man", "Hulk", "Captain America"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Qué canción imita Tom Cruise con los labios en Risky Business?",
+      "respuesta_correcta": "Old Time Rock & Roll",
+      "respuestas_incorrectas": ["Let's Stay Together", "Mack the Knife", "Johnny B. Goode"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿En qué serie aparecen Mulder y Scully?",
+      "respuesta_correcta": "The X-Files",
+      "respuestas_incorrectas": ["ER", "Friends", "Lost"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Qué personaje canta \"Breaking Free\" en High School Musical?",
+      "respuesta_correcta": "Troy y Gabriella",
+      "respuestas_incorrectas": ["Troy y Sharpay", "Ryan y Sharpay", "Troy y Taylor"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Qué película animada tiene un muñeco de nieve llamado Olaf?",
+      "respuesta_correcta": "Frozen",
+      "respuestas_incorrectas": ["Encanto", "Toy Story", "La bella y la bestia"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Quién interpreta a Iron Man en Marvel?",
+      "respuesta_correcta": "Robert Downey Jr.",
+      "respuestas_incorrectas": ["Chris Evans", "Mark Ruffalo", "Chris Hemsworth"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Quién fue el primer rapero en ganar un Oscar?",
+      "respuesta_correcta": "Eminem",
+      "respuestas_incorrectas": ["Jay-Z", "Kanye West", "Ludacris"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Quién escribió el guion de Rocky?",
+      "respuesta_correcta": "Sylvester Stallone",
+      "respuestas_incorrectas": ["Robert De Niro", "Francis Ford Coppola", "Paul Schrader"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Qué día es el Día de Star Wars?",
+      "respuesta_correcta": "4 de mayo",
+      "respuestas_incorrectas": ["May the Fourth", "4 de marzo", "4 de abril"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Quién interpretó en solo en casa?",
+      "respuesta_correcta": "Macaulay Culkin",
+      "respuestas_incorrectas": ["Chris Rock", "Tom Hanks", "Leonardo DiCaprio"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Cuál fue la primera película de Disney?",
+      "respuesta_correcta": "Blancanieves",
+      "respuestas_incorrectas": ["Toy Story", "La Cenicienta", "El Rey León"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Quién pintó el Guernica?",
+      "respuesta_correcta": "Picasso",
+      "respuestas_incorrectas": ["Miró", "Velázquez", "Dalí"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Cuál es la capital de Australia?",
+      "respuesta_correcta": "Canberra",
+      "respuestas_incorrectas": ["Sydney", "Melbourne", "Adelaide"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Cuál es el planeta rojo?",
+      "respuesta_correcta": "Marte",
+      "respuestas_incorrectas": ["Venus", "Júpiter", "Saturno"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Quién escribió \"Cien años de soledad\"?",
+      "respuesta_correcta": "Gabriel García Márquez",
+      "respuestas_incorrectas": ["Julio Cortázar", "Mario Vargas Llosa", "Isabel Allende"]
+    },
+    {
+      "categoria": "Cine y Series",
+      "pregunta": "¿Qué planeta tiene un satélite natural notable?",
+      "respuesta_correcta": "Tierra",
+      "respuestas_incorrectas": ["Venus", "Plutón", "Marte"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Cómo se llama el estadio del Real Zaragoza?",
+      "respuesta_correcta": "La Romareda",
+      "respuestas_incorrectas": ["Camp Nou", "Santiago Bernabéu", "El Molinón"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Quién fue el futbolista con más Balones de Oro?",
+      "respuesta_correcta": "Messi",
+      "respuestas_incorrectas": ["Ronaldo", "Pele", "Maradona"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Quién fue el primer hombre en pisar la luna?",
+      "respuesta_correcta": "Neil Armstrong",
+      "respuestas_incorrectas": ["Buzz Aldrin", "Yuri Gagarin", "Michael Collins"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Cuál es el planeta rojo?",
+      "respuesta_correcta": "Marte",
+      "respuestas_incorrectas": ["Venus", "Júpiter", "Saturno"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Quién escribió \"Cien años de soledad\"?",
+      "respuesta_correcta": "Gabriel García Márquez",
+      "respuestas_incorrectas": ["Julio Cortázar", "Mario Vargas Llosa", "Isabel Allende"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Qué planeta tiene un satélite natural notable?",
+      "respuesta_correcta": "Tierra",
+      "respuestas_incorrectas": ["Venus", "Plutón", "Marte"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Cuál es el planeta rojo?",
+      "respuesta_correcta": "Marte",
+      "respuestas_incorrectas": ["Venus", "Júpiter", "Saturno"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Quién escribió \"Cien años de soledad\"?",
+      "respuesta_correcta": "Gabriel García Márquez",
+      "respuestas_incorrectas": ["Julio Cortázar", "Mario Vargas Llosa", "Isabel Allende"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Qué planeta tiene un satélite natural notable?",
+      "respuesta_correcta": "Tierra",
+      "respuestas_incorrectas": ["Venus", "Plutón", "Marte"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Cuál es el planeta rojo?",
+      "respuesta_correcta": "Marte",
+      "respuestas_incorrectas": ["Venus", "Júpiter", "Saturno"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Quién escribió \"Cien años de soledad\"?",
+      "respuesta_correcta": "Gabriel García Márquez",
+      "respuestas_incorrectas": ["Julio Cortázar", "Mario Vargas Llosa", "Isabel Allende"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Qué planeta tiene un satélite natural notable?",
+      "respuesta_correcta": "Tierra",
+      "respuestas_incorrectas": ["Venus", "Plutón", "Marte"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Cuál es el planeta rojo?",
+      "respuesta_correcta": "Marte",
+      "respuestas_incorrectas": ["Venus", "Júpiter", "Saturno"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Quién escribió \"Cien años de soledad\"?",
+      "respuesta_correcta": "Gabriel García Márquez",
+      "respuestas_incorrectas": ["Julio Cortázar", "Mario Vargas Llosa", "Isabel Allende"]
+    },
+    {
+      "categoria": "Deportes",
+      "pregunta": "¿Qué planeta tiene un satélite natural notable?",
+      "respuesta_correcta": "Tierra",
+      "respuestas_incorrectas": ["Venus", "Plutón", "Marte"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Quién desarrolló la teoría de la relatividad?",
+      "respuesta_correcta": "Einstein",
+      "respuestas_incorrectas": ["Newton", "Galileo", "Bohr"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Cuál es la capital de Francia?",
+      "respuesta_correcta": "París",
+      "respuestas_incorrectas": ["Berlín", "Londres", "Roma"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Quién fue la primera mujer en ganar un Nobel?",
+      "respuesta_correcta": "Marie Curie",
+      "respuestas_incorrectas": ["Mother Teresa", "Jane Austen", "Florence Nightingale"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Quién pintó el cielo estrellado?",
+      "respuesta_correcta": "Van Gogh",
+      "respuestas_incorrectas": ["Picasso", "Monet", "Da Vinci"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Qué civilización construyó las pirámides?",
+      "respuesta_correcta": "Egipcia",
+      "respuestas_incorrectas": ["Griega", "Romana", "Azteca"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Cuál es la capital de México?",
+      "respuesta_correcta": "Ciudad de México",
+      "respuestas_incorrectas": ["Guadalajara", "Monterrey", "Veracruz"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Cuál es el famoso monumento fue construido por Keops?",
+      "respuesta_correcta": "Gran Pirámide de Giza",
+      "respuestas_incorrectas": ["Taj Mahal", "Gran Muralla China", "Stonehenge"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Cuál es la raíz cuadrada de 81?",
+      "respuesta_correcta": "9",
+      "respuestas_incorrectas": ["8", "7", "6"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Qué elemento químico tiene símbolo Na?",
+      "respuesta_correcta": "Sodio",
+      "respuestas_incorrectas": ["K", "Li", "Ca"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Qué vegetal se usa para hacer tartas de calabaza?",
+      "respuesta_correcta": "Calabaza",
+      "respuestas_incorrectas": ["Manzana", "Chocolate", "Zanahoria"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Cuál es la capital de Francia?",
+      "respuesta_correcta": "París",
+      "respuestas_incorrectas": ["Berlín", "Londres", "Roma"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Quién fue la primera mujer en ganar un Nobel?",
+      "respuesta_correcta": "Marie Curie",
+      "respuestas_incorrectas": ["Mother Teresa", "Jane Austen", "Florence Nightingale"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Quién pintó el cielo estrellado?",
+      "respuesta_correcta": "Van Gogh",
+      "respuestas_incorrectas": ["Picasso", "Monet", "Da Vinci"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Qué civilización construyó las pirámides?",
+      "respuesta_correcta": "Egipcia",
+      "respuestas_incorrectas": ["Griega", "Romana", "Azteca"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Cuál es la capital de México?",
+      "respuesta_correcta": "Ciudad de México",
+      "respuestas_incorrectas": ["Guadalajara", "Monterrey", "Veracruz"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Cuál es el famoso monumento fue construido por Keops?",
+      "respuesta_correcta": "Gran Pirámide de Giza",
+      "respuestas_incorrectas": ["Taj Mahal", "Gran Muralla China", "Stonehenge"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Cuál es la raíz cuadrada de 81?",
+      "respuesta_correcta": "9",
+      "respuestas_incorrectas": ["8", "7", "6"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Qué elemento químico tiene símbolo Na?",
+      "respuesta_correcta": "Sodio",
+      "respuestas_incorrectas": ["K", "Li", "Ca"]
+    },
+    {
+      "categoria": "Literatura",
+      "pregunta": "¿Qué vegetal se usa para hacer tartas de calabaza?",
+      "respuesta_correcta": "Calabaza",
+      "respuestas_incorrectas": ["Manzana", "Chocolate", "Zanahoria"]
+    }
+  ]
+} 
